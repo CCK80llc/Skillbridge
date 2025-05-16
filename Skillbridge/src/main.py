@@ -24,7 +24,7 @@ logger.info("Flask app created")
 # Fix for CORS issue with credentials
 CORS(app, 
      resources={r"/*": {"origins": ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175", "http://localhost:5176", 
-                                   "https://skillbridge-frontend.netlify.app"]}}, 
+                                   "https://skillbridge-frontend.netlify.app", "https://skillbridge-frontend-roan.vercel.app"]}}, 
      supports_credentials=True,
      allow_headers=["Content-Type", "Authorization"],
      methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"])
